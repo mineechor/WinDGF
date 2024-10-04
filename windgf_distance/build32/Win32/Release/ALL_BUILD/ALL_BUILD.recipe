@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\afl-fuzz.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\afl-showmap.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\afl-tmin.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\custom_net_fuzzer.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\custom_winafl_server.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\test.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\test_gdiplus.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\test_netmode.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\test_servermode.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\test_static.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\winafl.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\final\2022\winafl\winafldirctedgo3\build32\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

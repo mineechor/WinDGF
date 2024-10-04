@@ -1,0 +1,225 @@
+
+#include <stdio.h>
+#include <string.h> 
+#include <stdlib.h> 
+#include <intrin.h>
+#include <windows.h>
+#include <tchar.h>
+#include <strsafe.h>
+
+#define dbg_printf (void)printf
+
+// Macro to help to loading functions
+#define LOAD_FUNC(h, n)                                 \
+    n##_func = (n##_func_t)GetProcAddress(h, #n);       \
+    if (!n##_func) {                                    \
+        dbg_printf("failed to load function " #n "\n"); \
+        exit(1);                                        \
+    }                                                   
+
+// Macro help creating unique nop functions
+#define NOP(x)                                                      \
+    int nop##x() {                                                  \
+        dbg_printf("==> nop%d called, %p\n", ##x, _ReturnAddress());\
+        return (DWORD)x;                                            \
+    }
+
+HMODULE dlllib;
+
+typedef int (__stdcall *_FreeImage_GetFileTypeU@8_func_t)(wchar_t *, int);
+typedef int (__stdcall *_FreeImage_LoadU@12_func_t)(int, wchar_t *, int);
+typedef int (__stdcall *_FreeImage_GetWidth@4_func_t)(int);
+typedef int (__stdcall *_FreeImage_GetHeight@4_func_t)(int);
+typedef int (__stdcall *_FreeImage_GetImageType@4_func_t)(int);
+typedef int (__stdcall *_FreeImage_GetBPP@4_func_t)(int);
+typedef int (__stdcall *_FreeImage_Copy@20_func_t)(int, int, int, int, int);
+typedef int (__stdcall *_FreeImage_Rescale@16_func_t)(int, int, int, int);
+typedef int (__stdcall *_FreeImage_Unload@4_func_t)(void *);
+typedef int (__stdcall *_FreeImage_HasBackgroundColor@4_func_t)(int);
+typedef int (__stdcall *_FreeImage_IsTransparent@4_func_t)(int);
+
+
+void fuzz_me(char* filename){
+
+    _FreeImage_GetFileTypeU@8_func_t _FreeImage_GetFileTypeU@8_func;
+    _FreeImage_LoadU@12_func_t _FreeImage_LoadU@12_func;
+    _FreeImage_GetWidth@4_func_t _FreeImage_GetWidth@4_func;
+    _FreeImage_GetHeight@4_func_t _FreeImage_GetHeight@4_func;
+    _FreeImage_GetImageType@4_func_t _FreeImage_GetImageType@4_func;
+    _FreeImage_GetBPP@4_func_t _FreeImage_GetBPP@4_func;
+    _FreeImage_Copy@20_func_t _FreeImage_Copy@20_func;
+    _FreeImage_Rescale@16_func_t _FreeImage_Rescale@16_func;
+    _FreeImage_Unload@4_func_t _FreeImage_Unload@4_func;
+    _FreeImage_HasBackgroundColor@4_func_t _FreeImage_HasBackgroundColor@4_func;
+    _FreeImage_IsTransparent@4_func_t _FreeImage_IsTransparent@4_func;
+
+    
+    /* Harness function #0 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetFileTypeU@8);
+    int c0_ret = _FreeImage_GetFileTypeU@8_func(filename, 0x0);
+    dbg_printf("_FreeImage_GetFileTypeU@8, ret = %d\n", c0_ret); 
+    
+    /* Harness function #1 */    
+    LOAD_FUNC(dlllib, _FreeImage_LoadU@12);
+    int c1_ret = _FreeImage_LoadU@12_func(0x2, filename, 0x8000);
+    dbg_printf("_FreeImage_LoadU@12, ret = %d\n", c1_ret); 
+    
+    /* Harness function #2 */
+    int c2_a0 = c1_ret;    
+    LOAD_FUNC(dlllib, _FreeImage_GetWidth@4);
+    int c2_ret = _FreeImage_GetWidth@4_func(c2_a0);
+    dbg_printf("_FreeImage_GetWidth@4, ret = %d\n", c2_ret); 
+    
+    /* Harness function #3 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetHeight@4);
+    int c3_ret = _FreeImage_GetHeight@4_func(c2_a0);
+    dbg_printf("_FreeImage_GetHeight@4, ret = %d\n", c3_ret); 
+    
+    /* Harness function #4 */    
+    LOAD_FUNC(dlllib, _FreeImage_LoadU@12);
+    int c4_ret = _FreeImage_LoadU@12_func(0x2, filename, 0x0);
+    dbg_printf("_FreeImage_LoadU@12, ret = %d\n", c4_ret); 
+    
+    /* Harness function #5 */
+    int c5_a0 = c4_ret;    
+    LOAD_FUNC(dlllib, _FreeImage_GetImageType@4);
+    int c5_ret = _FreeImage_GetImageType@4_func(c5_a0);
+    dbg_printf("_FreeImage_GetImageType@4, ret = %d\n", c5_ret); 
+    
+    /* Harness function #6 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetBPP@4);
+    int c6_ret = _FreeImage_GetBPP@4_func(c5_a0);
+    dbg_printf("_FreeImage_GetBPP@4, ret = %d\n", c6_ret); 
+    
+    /* Harness function #7 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetWidth@4);
+    int c7_ret = _FreeImage_GetWidth@4_func(c5_a0);
+    dbg_printf("_FreeImage_GetWidth@4, ret = %d\n", c7_ret); 
+    
+    /* Harness function #8 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetHeight@4);
+    int c8_ret = _FreeImage_GetHeight@4_func(c5_a0);
+    dbg_printf("_FreeImage_GetHeight@4, ret = %d\n", c8_ret); 
+    
+    /* Harness function #9 */    
+    LOAD_FUNC(dlllib, _FreeImage_Copy@20);
+    int c9_ret = _FreeImage_Copy@20_func(c5_a0, 0x125, 0x0, 0x6da, 0x5b5);
+    dbg_printf("_FreeImage_Copy@20, ret = %d\n", c9_ret); 
+    
+    /* Harness function #10 */
+    int c10_a0 = c9_ret;       
+    LOAD_FUNC(dlllib, _FreeImage_Rescale@16);
+    int c10_ret = _FreeImage_Rescale@16_func(c10_a0, 0x32, 0x32, 0x4);
+    dbg_printf("_FreeImage_Rescale@16, ret = %d\n", c10_ret); 
+    
+    /* Harness function #11 */    
+    LOAD_FUNC(dlllib, _FreeImage_Unload@4);
+    int c11_ret = _FreeImage_Unload@4_func(c10_a0);
+    dbg_printf("_FreeImage_Unload@4, ret = %d\n", c11_ret); 
+    
+    /* Harness function #12 */
+    int c12_a0 = c10_ret;    
+    LOAD_FUNC(dlllib, _FreeImage_GetImageType@4);
+    int c12_ret = _FreeImage_GetImageType@4_func(c12_a0);
+    dbg_printf("_FreeImage_GetImageType@4, ret = %d\n", c12_ret); 
+    
+    /* Harness function #13 */    
+    LOAD_FUNC(dlllib, _FreeImage_HasBackgroundColor@4);
+    int c13_ret = _FreeImage_HasBackgroundColor@4_func(c12_a0);
+    dbg_printf("_FreeImage_HasBackgroundColor@4, ret = %d\n", c13_ret); 
+    
+    /* Harness function #14 */    
+    LOAD_FUNC(dlllib, _FreeImage_IsTransparent@4);
+    int c14_ret = _FreeImage_IsTransparent@4_func(c12_a0);
+    dbg_printf("_FreeImage_IsTransparent@4, ret = %d\n", c14_ret); 
+    
+    /* Harness function #15 */
+    int c15_a0 = 0x37fbfd50;    
+    LOAD_FUNC(dlllib, _FreeImage_GetWidth@4);
+    int c15_ret = _FreeImage_GetWidth@4_func(c15_a0);
+    dbg_printf("_FreeImage_GetWidth@4, ret = %d\n", c15_ret); 
+    
+    /* Harness function #16 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetHeight@4);
+    int c16_ret = _FreeImage_GetHeight@4_func(c15_a0);
+    dbg_printf("_FreeImage_GetHeight@4, ret = %d\n", c16_ret); 
+    
+    /* Harness function #17 */
+     wchar_t * c17_a1 = 0x3a0063;     
+    LOAD_FUNC(dlllib, _FreeImage_LoadU@12);
+    int c17_ret = _FreeImage_LoadU@12_func(0x2, c17_a1, 0x0);
+    dbg_printf("_FreeImage_LoadU@12, ret = %d\n", c17_ret); 
+    
+    /* Harness function #18 */
+    int c18_a0 = c17_ret;    
+    LOAD_FUNC(dlllib, _FreeImage_GetImageType@4);
+    int c18_ret = _FreeImage_GetImageType@4_func(c18_a0);
+    dbg_printf("_FreeImage_GetImageType@4, ret = %d\n", c18_ret); 
+    
+    /* Harness function #19 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetBPP@4);
+    int c19_ret = _FreeImage_GetBPP@4_func(c18_a0);
+    dbg_printf("_FreeImage_GetBPP@4, ret = %d\n", c19_ret); 
+    
+    /* Harness function #20 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetWidth@4);
+    int c20_ret = _FreeImage_GetWidth@4_func(c18_a0);
+    dbg_printf("_FreeImage_GetWidth@4, ret = %d\n", c20_ret); 
+    
+    /* Harness function #21 */    
+    LOAD_FUNC(dlllib, _FreeImage_GetHeight@4);
+    int c21_ret = _FreeImage_GetHeight@4_func(c18_a0);
+    dbg_printf("_FreeImage_GetHeight@4, ret = %d\n", c21_ret); 
+    
+    /* Harness function #22 */    
+    LOAD_FUNC(dlllib, _FreeImage_Copy@20);
+    int c22_ret = _FreeImage_Copy@20_func(c18_a0, 0x3d, 0x0, 0x221, 0x1e4);
+    dbg_printf("_FreeImage_Copy@20, ret = %d\n", c22_ret); 
+    
+    /* Harness function #23 */
+    int c23_a0 = c22_ret;       
+    LOAD_FUNC(dlllib, _FreeImage_Rescale@16);
+    int c23_ret = _FreeImage_Rescale@16_func(c23_a0, 0x32, 0x32, 0x4);
+    dbg_printf("_FreeImage_Rescale@16, ret = %d\n", c23_ret); 
+    
+    /* Harness function #24 */    
+    LOAD_FUNC(dlllib, _FreeImage_Unload@4);
+    int c24_ret = _FreeImage_Unload@4_func(c23_a0);
+    dbg_printf("_FreeImage_Unload@4, ret = %d\n", c24_ret); 
+    
+    /* Harness function #25 */
+    int c25_a0 = c23_ret;    
+    LOAD_FUNC(dlllib, _FreeImage_GetImageType@4);
+    int c25_ret = _FreeImage_GetImageType@4_func(c25_a0);
+    dbg_printf("_FreeImage_GetImageType@4, ret = %d\n", c25_ret); 
+    
+    /* Harness function #26 */    
+    LOAD_FUNC(dlllib, _FreeImage_HasBackgroundColor@4);
+    int c26_ret = _FreeImage_HasBackgroundColor@4_func(c25_a0);
+    dbg_printf("_FreeImage_HasBackgroundColor@4, ret = %d\n", c26_ret); 
+    
+    /* Harness function #27 */    
+    LOAD_FUNC(dlllib, _FreeImage_IsTransparent@4);
+    int c27_ret = _FreeImage_IsTransparent@4_func(c25_a0);
+    dbg_printf("_FreeImage_IsTransparent@4, ret = %d\n", c27_ret); 
+
+}
+
+int main(int argc, char ** argv)
+{
+    if (argc < 2) {
+        printf("Usage %s: <input file>\n", argv[0]);
+        printf("  e.g., harness.exe input\n");
+        exit(1);
+    }
+
+    dlllib = LoadLibraryA("%s");
+    if (dlllib == NULL){
+        dbg_printf("failed to load library, gle = %d\n", GetLastError());
+        exit(1);
+    }
+
+    char * filename = argv[1];    
+    fuzz_me(filename);    
+    return 0;
+}

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafldirctedgo3key/CMakeLists.txt
+  custom_winafl_server.c
+    正在创建库 D:/final/2022/winafl/winafldirctedgo3key/build32/Release/custom_winafl_server.lib 和对象 D:/final/2022/winafl/winafldirctedgo3key/build32/Release/custom_winafl_server.exp
+  custom_winafl_server.vcxproj -> D:\final\2022\winafl\winafldirctedgo3key\build32\bin\Release\custom_winafl_server.dll

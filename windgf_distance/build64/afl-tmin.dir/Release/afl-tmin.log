@@ -1,0 +1,3 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt
+  afl-tmin.c
+  afl-tmin.vcxproj -> D:\final\2022\winafl\winafl\build64\bin\Release\afl-tmin.exe

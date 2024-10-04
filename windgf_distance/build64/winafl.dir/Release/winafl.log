@@ -1,0 +1,12 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt
+  winafl.c
+D:\final\2022\winafl\winafl\winafl.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\final\2022\winafl\winafl\winafl.c(617,54): warning C4311: “类型强制转换”: 从“void *”到“DWORD”的指针截断
+D:\final\2022\winafl\winafl\winafl.c(618,32): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“void *”
+D:\final\2022\winafl\winafl\winafl.c(624,37): warning C4311: “类型强制转换”: 从“void *”到“DWORD”的指针截断
+D:\final\2022\winafl\winafl\winafl.c(876,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  modules.c
+  正在生成代码...
+    正在创建库 D:/final/2022/winafl/winafl/build64/Release/winafl.lib 和对象 D:/final/2022/winafl/winafl/build64/Release/winafl.exp
+LINK : warning LNK4281: x64 映像的基址 0x72000000 不适当；将基址设为 4 GB 以上以实现最佳 ASLR 优化
+  winafl.vcxproj -> D:\final\2022\winafl\winafl\build64\bin\Release\winafl.dll

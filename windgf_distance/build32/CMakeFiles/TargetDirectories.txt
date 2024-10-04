@@ -1,0 +1,13 @@
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/test.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/custom_winafl_server.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/afl-showmap.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/test_servermode.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/test_netmode.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/afl-fuzz.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/test_gdiplus.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/test_static.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/afl-tmin.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/custom_net_fuzzer.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/winafl.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/ALL_BUILD.dir
+D:/final/2022/winafl/winafldirctedgo3/build32/CMakeFiles/ZERO_CHECK.dir

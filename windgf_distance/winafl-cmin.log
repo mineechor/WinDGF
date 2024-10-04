@@ -1,0 +1,328 @@
+2022-09-22 20:12:42,121 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 20:12:42,122 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\ABCtest\in\bmp
+2022-09-22 20:12:42,124 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 20:12:43,295 [INFO ] [main] [+] OK, 3084 tuples recorded.
+2022-09-22 20:12:43,296 [INFO ] [main] [+] Found 40 test cases across: D:\A_Download\winafl\ABCtest\in\bmp.
+2022-09-22 20:12:43,296 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 20:12:48,073 [INFO ] [main] [+] Found 3084 unique tuples across 40 files
+2022-09-22 20:12:48,073 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 20:12:48,088 [INFO ] [main] [+] Original set was composed of 40 files
+2022-09-22 20:12:48,089 [INFO ] [main] [+] Effective set was composed of 40 files (total size 0 MB).
+2022-09-22 20:12:48,089 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 20:12:48,091 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\ABCtest\in\bmp_out...
+2022-09-22 20:12:48,092 [INFO ] [main] [+] Time elapsed: 4 seconds
+2022-09-22 20:13:22,278 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 20:13:22,279 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\ABCtest\in\ico
+2022-09-22 20:13:22,279 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 20:13:23,341 [INFO ] [main] [+] OK, 3237 tuples recorded.
+2022-09-22 20:13:23,342 [INFO ] [main] [+] Found 55 test cases across: D:\A_Download\winafl\ABCtest\in\ico.
+2022-09-22 20:13:23,342 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 20:13:29,490 [INFO ] [main] [+] Found 3281 unique tuples across 55 files
+2022-09-22 20:13:29,490 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 20:13:29,513 [INFO ] [main] [+] Original set was composed of 55 files
+2022-09-22 20:13:29,515 [INFO ] [main] [+] Effective set was composed of 55 files (total size 0 MB).
+2022-09-22 20:13:29,515 [INFO ] [main] [+] Narrowed down to 3 files (total size 0 MB).
+2022-09-22 20:13:29,515 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\ABCtest\in\ico_out...
+2022-09-22 20:13:29,519 [INFO ] [main] [+] Time elapsed: 6 seconds
+2022-09-22 20:14:40,813 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 20:14:40,813 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\ABCtest\in\jpg
+2022-09-22 20:14:40,815 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 20:14:41,937 [INFO ] [main] [+] OK, 3967 tuples recorded.
+2022-09-22 20:14:41,937 [INFO ] [main] [+] Found 29 test cases across: D:\A_Download\winafl\ABCtest\in\jpg.
+2022-09-22 20:14:41,937 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 20:14:48,780 [INFO ] [main] [+] Found 4266 unique tuples across 29 files
+2022-09-22 20:14:48,780 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 20:14:48,835 [INFO ] [main] [+] Original set was composed of 29 files
+2022-09-22 20:14:48,836 [INFO ] [main] [+] Effective set was composed of 29 files (total size 0 MB).
+2022-09-22 20:14:48,836 [INFO ] [main] [+] Narrowed down to 5 files (total size 0 MB).
+2022-09-22 20:14:48,836 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\ABCtest\in\jpg_out...
+2022-09-22 20:14:48,842 [INFO ] [main] [+] Time elapsed: 6 seconds
+2022-09-22 20:16:09,345 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 20:16:09,345 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\ABCtest\in\png
+2022-09-22 20:16:09,345 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 20:16:10,430 [INFO ] [main] [+] OK, 3817 tuples recorded.
+2022-09-22 20:16:10,430 [INFO ] [main] [+] Found 25 test cases across: D:\A_Download\winafl\ABCtest\in\png.
+2022-09-22 20:16:10,431 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 20:16:13,584 [INFO ] [main] [+] Found 3919 unique tuples across 25 files
+2022-09-22 20:16:13,584 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 20:16:13,618 [INFO ] [main] [+] Original set was composed of 25 files
+2022-09-22 20:16:13,618 [INFO ] [main] [+] Effective set was composed of 25 files (total size 0 MB).
+2022-09-22 20:16:13,618 [INFO ] [main] [+] Narrowed down to 3 files (total size 0 MB).
+2022-09-22 20:16:13,619 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\ABCtest\in\png_out...
+2022-09-22 20:16:13,622 [INFO ] [main] [+] Time elapsed: 3 seconds
+2022-09-22 20:17:24,368 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 20:17:24,369 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\ABCtest\in\tag
+2022-09-22 20:17:24,369 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 20:17:25,427 [INFO ] [main] [+] OK, 3178 tuples recorded.
+2022-09-22 20:17:25,428 [INFO ] [main] [+] Found 25 test cases across: D:\A_Download\winafl\ABCtest\in\tag.
+2022-09-22 20:17:25,428 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 20:17:28,532 [INFO ] [main] [+] Found 3222 unique tuples across 25 files
+2022-09-22 20:17:28,533 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 20:17:28,555 [INFO ] [main] [+] Original set was composed of 25 files
+2022-09-22 20:17:28,555 [INFO ] [main] [+] Effective set was composed of 25 files (total size 0 MB).
+2022-09-22 20:17:28,555 [INFO ] [main] [+] Narrowed down to 2 files (total size 0 MB).
+2022-09-22 20:17:28,556 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\ABCtest\in\tag_out...
+2022-09-22 20:17:28,558 [INFO ] [main] [+] Time elapsed: 3 seconds
+2022-09-22 20:18:55,670 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 20:18:55,670 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\ABCtest\in\tiff
+2022-09-22 20:18:55,671 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 20:18:56,956 [INFO ] [main] [+] OK, 5474 tuples recorded.
+2022-09-22 20:18:56,956 [INFO ] [main] [+] Found 24 test cases across: D:\A_Download\winafl\ABCtest\in\tiff.
+2022-09-22 20:18:56,957 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 20:19:00,075 [INFO ] [main] [+] Found 5474 unique tuples across 24 files
+2022-09-22 20:19:00,075 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 20:19:00,092 [INFO ] [main] [+] Original set was composed of 24 files
+2022-09-22 20:19:00,092 [INFO ] [main] [+] Effective set was composed of 24 files (total size 13 MB).
+2022-09-22 20:19:00,092 [INFO ] [main] [+] Narrowed down to 2 files (total size 1 MB).
+2022-09-22 20:19:00,094 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\ABCtest\in\tiff_out...
+2022-09-22 20:19:00,096 [INFO ] [main] [+] Time elapsed: 3 seconds
+2022-09-22 21:55:35,607 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 21:55:35,608 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\TAG
+2022-09-22 21:55:35,617 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 21:55:36,882 [INFO ] [main] [+] OK, 3207 tuples recorded.
+2022-09-22 21:55:36,882 [INFO ] [main] [+] Found 514 test cases across: D:\A_Download\winafl\pic\TAG.
+2022-09-22 21:55:36,884 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 21:56:44,138 [INFO ] [main] [+] Found 3208 unique tuples across 514 files
+2022-09-22 21:56:44,140 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 21:56:44,161 [INFO ] [main] [+] Original set was composed of 514 files
+2022-09-22 21:56:44,161 [INFO ] [main] [+] Effective set was composed of 514 files (total size 8 MB).
+2022-09-22 21:56:44,165 [INFO ] [main] [+] Narrowed down to 2 files (total size 0 MB).
+2022-09-22 21:56:44,167 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\TAG_out...
+2022-09-22 21:56:44,168 [INFO ] [main] [+] Time elapsed: 67 seconds
+2022-09-22 21:59:18,023 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 21:59:18,025 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\jpg
+2022-09-22 21:59:18,063 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 21:59:19,305 [INFO ] [main] [+] OK, 3996 tuples recorded.
+2022-09-22 21:59:19,305 [INFO ] [main] [+] Found 3000 test cases across: D:\A_Download\winafl\pic\jpg.
+2022-09-22 21:59:19,306 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:07:06,782 [INFO ] [main] [+] Found 4022 unique tuples across 3000 files
+2022-09-22 22:07:06,783 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:07:06,825 [INFO ] [main] [+] Original set was composed of 3000 files
+2022-09-22 22:07:06,826 [INFO ] [main] [+] Effective set was composed of 3000 files (total size 2 MB).
+2022-09-22 22:07:06,828 [INFO ] [main] [+] Narrowed down to 4 files (total size 0 MB).
+2022-09-22 22:07:06,828 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\jpg_out...
+2022-09-22 22:07:06,832 [INFO ] [main] [+] Time elapsed: 467 seconds
+2022-09-22 22:08:01,059 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:08:01,059 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\bmp
+2022-09-22 22:08:01,069 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:08:02,118 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:08:02,118 [INFO ] [main] [+] Found 820 test cases across: D:\A_Download\winafl\pic\bmp.
+2022-09-22 22:08:02,118 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:09:42,263 [INFO ] [main] [+] Found 3113 unique tuples across 820 files
+2022-09-22 22:09:42,266 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:09:42,282 [INFO ] [main] [+] Original set was composed of 820 files
+2022-09-22 22:09:42,282 [INFO ] [main] [+] Effective set was composed of 820 files (total size 1 MB).
+2022-09-22 22:09:42,283 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:09:42,286 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\bmp_out...
+2022-09-22 22:09:42,286 [INFO ] [main] [+] Time elapsed: 100 seconds
+2022-09-22 22:10:17,540 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:10:17,542 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\ico
+2022-09-22 22:10:17,549 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:10:18,619 [INFO ] [main] [+] OK, 3238 tuples recorded.
+2022-09-22 22:10:18,621 [INFO ] [main] [+] Found 483 test cases across: D:\A_Download\winafl\pic\ico.
+2022-09-22 22:10:18,621 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:11:26,769 [INFO ] [main] [+] Found 3712 unique tuples across 483 files
+2022-09-22 22:11:26,775 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:11:26,871 [INFO ] [main] [+] Original set was composed of 483 files
+2022-09-22 22:11:26,872 [INFO ] [main] [+] Effective set was composed of 483 files (total size 0 MB).
+2022-09-22 22:11:26,875 [INFO ] [main] [+] Narrowed down to 9 files (total size 0 MB).
+2022-09-22 22:11:26,875 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\ico_out...
+2022-09-22 22:11:26,884 [INFO ] [main] [+] Time elapsed: 68 seconds
+2022-09-22 22:12:08,875 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:12:08,875 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\png
+2022-09-22 22:12:08,888 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:12:09,990 [INFO ] [main] [+] OK, 3848 tuples recorded.
+2022-09-22 22:12:09,992 [INFO ] [main] [+] Found 980 test cases across: D:\A_Download\winafl\pic\png.
+2022-09-22 22:12:09,992 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:14:52,703 [INFO ] [main] [+] Found 3953 unique tuples across 980 files
+2022-09-22 22:14:52,704 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:14:52,746 [INFO ] [main] [+] Original set was composed of 980 files
+2022-09-22 22:14:52,750 [INFO ] [main] [+] Effective set was composed of 980 files (total size 0 MB).
+2022-09-22 22:14:52,752 [INFO ] [main] [+] Narrowed down to 5 files (total size 0 MB).
+2022-09-22 22:14:52,753 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\png_out...
+2022-09-22 22:14:52,757 [INFO ] [main] [+] Time elapsed: 162 seconds
+2022-09-22 22:15:50,750 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:15:50,752 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\tiff
+2022-09-22 22:15:50,772 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:15:52,292 [INFO ] [main] [+] OK, 5540 tuples recorded.
+2022-09-22 22:15:52,293 [INFO ] [main] [+] Found 1338 test cases across: D:\A_Download\winafl\pic\tiff.
+2022-09-22 22:15:52,295 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:20:24,019 [INFO ] [main] [+] Found 5608 unique tuples across 1338 files
+2022-09-22 22:20:24,020 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:20:24,224 [INFO ] [main] [+] Original set was composed of 1338 files
+2022-09-22 22:20:24,224 [INFO ] [main] [+] Effective set was composed of 1338 files (total size 753 MB).
+2022-09-22 22:20:24,226 [INFO ] [main] [+] Narrowed down to 4 files (total size 2 MB).
+2022-09-22 22:20:24,226 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\tiff_out...
+2022-09-22 22:20:24,230 [INFO ] [main] [+] Time elapsed: 271 seconds
+2022-09-22 22:22:48,526 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:22:48,528 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\1
+2022-09-22 22:22:48,542 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:22:49,569 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:22:49,571 [INFO ] [main] [+] Found 901 test cases across: D:\A_Download\winafl\pic\BM\TestData\1.
+2022-09-22 22:22:49,571 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:24:37,704 [INFO ] [main] [+] Found 3113 unique tuples across 901 files
+2022-09-22 22:24:37,706 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:24:37,723 [INFO ] [main] [+] Original set was composed of 901 files
+2022-09-22 22:24:37,724 [INFO ] [main] [+] Effective set was composed of 901 files (total size 1 MB).
+2022-09-22 22:24:37,726 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:24:37,726 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\1out...
+2022-09-22 22:24:37,727 [INFO ] [main] [+] Time elapsed: 108 seconds
+2022-09-22 22:24:58,190 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:24:58,191 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\2
+2022-09-22 22:24:58,237 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:24:59,305 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:24:59,306 [INFO ] [main] [+] Found 779 test cases across: D:\A_Download\winafl\pic\BM\TestData\2.
+2022-09-22 22:24:59,308 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:26:35,621 [INFO ] [main] [+] Found 3113 unique tuples across 779 files
+2022-09-22 22:26:35,621 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:26:35,640 [INFO ] [main] [+] Original set was composed of 779 files
+2022-09-22 22:26:35,641 [INFO ] [main] [+] Effective set was composed of 779 files (total size 1 MB).
+2022-09-22 22:26:35,641 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:26:35,641 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\2out...
+2022-09-22 22:26:35,642 [INFO ] [main] [+] Time elapsed: 96 seconds
+2022-09-22 22:47:05,569 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:47:05,569 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\3
+2022-09-22 22:47:05,621 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:47:06,651 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:47:06,651 [INFO ] [main] [+] Found 853 test cases across: D:\A_Download\winafl\pic\BM\TestData\3.
+2022-09-22 22:47:06,651 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:48:46,183 [INFO ] [main] [+] Found 3113 unique tuples across 853 files
+2022-09-22 22:48:46,184 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:48:46,200 [INFO ] [main] [+] Original set was composed of 853 files
+2022-09-22 22:48:46,204 [INFO ] [main] [+] Effective set was composed of 853 files (total size 1 MB).
+2022-09-22 22:48:46,206 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:48:46,209 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\3out...
+2022-09-22 22:48:46,210 [INFO ] [main] [+] Time elapsed: 99 seconds
+2022-09-22 22:50:11,302 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:50:11,302 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\4
+2022-09-22 22:50:11,346 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:50:12,484 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:50:12,484 [INFO ] [main] [+] Found 751 test cases across: D:\A_Download\winafl\pic\BM\TestData\4.
+2022-09-22 22:50:12,486 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:51:41,257 [INFO ] [main] [+] Found 3113 unique tuples across 751 files
+2022-09-22 22:51:41,257 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:51:41,276 [INFO ] [main] [+] Original set was composed of 751 files
+2022-09-22 22:51:41,276 [INFO ] [main] [+] Effective set was composed of 751 files (total size 1 MB).
+2022-09-22 22:51:41,279 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:51:41,283 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\4out...
+2022-09-22 22:51:41,286 [INFO ] [main] [+] Time elapsed: 88 seconds
+2022-09-22 22:51:59,290 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:51:59,290 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\5
+2022-09-22 22:51:59,335 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:52:00,404 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:52:00,404 [INFO ] [main] [+] Found 703 test cases across: D:\A_Download\winafl\pic\BM\TestData\5.
+2022-09-22 22:52:00,405 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:53:26,305 [INFO ] [main] [+] Found 3113 unique tuples across 703 files
+2022-09-22 22:53:26,305 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:53:26,322 [INFO ] [main] [+] Original set was composed of 703 files
+2022-09-22 22:53:26,322 [INFO ] [main] [+] Effective set was composed of 703 files (total size 1 MB).
+2022-09-22 22:53:26,325 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:53:26,325 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\5out...
+2022-09-22 22:53:26,328 [INFO ] [main] [+] Time elapsed: 85 seconds
+2022-09-22 22:53:56,091 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:53:56,092 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\6
+2022-09-22 22:53:56,130 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:53:57,167 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:53:57,167 [INFO ] [main] [+] Found 797 test cases across: D:\A_Download\winafl\pic\BM\TestData\6.
+2022-09-22 22:53:57,168 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:55:39,072 [INFO ] [main] [+] Found 3113 unique tuples across 797 files
+2022-09-22 22:55:39,072 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:55:39,092 [INFO ] [main] [+] Original set was composed of 797 files
+2022-09-22 22:55:39,092 [INFO ] [main] [+] Effective set was composed of 797 files (total size 1 MB).
+2022-09-22 22:55:39,095 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:55:39,095 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\6out...
+2022-09-22 22:55:39,098 [INFO ] [main] [+] Time elapsed: 101 seconds
+2022-09-22 22:56:18,046 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:56:18,048 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\7
+2022-09-22 22:56:18,065 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:56:19,115 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:56:19,115 [INFO ] [main] [+] Found 834 test cases across: D:\A_Download\winafl\pic\BM\TestData\7.
+2022-09-22 22:56:19,115 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 22:58:06,783 [INFO ] [main] [+] Found 3113 unique tuples across 834 files
+2022-09-22 22:58:06,785 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 22:58:06,802 [INFO ] [main] [+] Original set was composed of 834 files
+2022-09-22 22:58:06,802 [INFO ] [main] [+] Effective set was composed of 834 files (total size 1 MB).
+2022-09-22 22:58:06,805 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 22:58:06,808 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\7out...
+2022-09-22 22:58:06,815 [INFO ] [main] [+] Time elapsed: 107 seconds
+2022-09-22 22:58:26,128 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 22:58:26,128 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\8
+2022-09-22 22:58:26,144 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 22:58:27,196 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 22:58:27,197 [INFO ] [main] [+] Found 765 test cases across: D:\A_Download\winafl\pic\BM\TestData\8.
+2022-09-22 22:58:27,197 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 23:00:16,446 [INFO ] [main] [+] Found 3113 unique tuples across 765 files
+2022-09-22 23:00:16,448 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 23:00:16,464 [INFO ] [main] [+] Original set was composed of 765 files
+2022-09-22 23:00:16,466 [INFO ] [main] [+] Effective set was composed of 765 files (total size 1 MB).
+2022-09-22 23:00:16,469 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 23:00:16,470 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\8out...
+2022-09-22 23:00:16,470 [INFO ] [main] [+] Time elapsed: 109 seconds
+2022-09-22 23:00:43,966 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:00:43,967 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\9
+2022-09-22 23:00:44,007 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 23:00:45,194 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 23:00:45,196 [INFO ] [main] [+] Found 797 test cases across: D:\A_Download\winafl\pic\BM\TestData\9.
+2022-09-22 23:00:45,197 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 23:02:31,102 [INFO ] [main] [+] Found 3113 unique tuples across 797 files
+2022-09-22 23:02:31,104 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 23:02:31,128 [INFO ] [main] [+] Original set was composed of 797 files
+2022-09-22 23:02:31,131 [INFO ] [main] [+] Effective set was composed of 797 files (total size 1 MB).
+2022-09-22 23:02:31,131 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 23:02:31,132 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\9out...
+2022-09-22 23:02:31,134 [INFO ] [main] [+] Time elapsed: 105 seconds
+2022-09-22 23:03:56,542 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:05:03,364 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:05:03,364 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\BM\TestData\test
+2022-09-22 23:05:03,365 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 23:05:04,492 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 23:05:04,492 [INFO ] [main] [+] Found 6 test cases across: D:\A_Download\winafl\pic\BM\TestData\test.
+2022-09-22 23:05:04,493 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 23:05:05,487 [INFO ] [main] [+] Found 3113 unique tuples across 6 files
+2022-09-22 23:05:05,489 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 23:05:05,505 [INFO ] [main] [+] Original set was composed of 6 files
+2022-09-22 23:05:05,505 [INFO ] [main] [+] Effective set was composed of 6 files (total size 0 MB).
+2022-09-22 23:05:05,506 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 23:05:05,509 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\BM\TestData\testout...
+2022-09-22 23:05:05,510 [INFO ] [main] [+] Time elapsed: 1 seconds
+2022-09-22 23:08:10,888 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:08:10,888 [ERROR] [main] [!] D:\A_Download\winafl\pic\bmp_out already exists, please remove it to avoid data loss.
+2022-09-22 23:08:27,200 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:08:27,200 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\bmp
+2022-09-22 23:08:27,200 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 23:08:28,244 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 23:08:28,244 [INFO ] [main] [+] Found 11 test cases across: D:\A_Download\winafl\pic\bmp.
+2022-09-22 23:08:28,246 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 23:08:29,591 [INFO ] [main] [+] Found 3113 unique tuples across 11 files
+2022-09-22 23:08:29,592 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 23:08:29,605 [INFO ] [main] [+] Original set was composed of 11 files
+2022-09-22 23:08:29,607 [INFO ] [main] [+] Effective set was composed of 11 files (total size 0 MB).
+2022-09-22 23:08:29,609 [INFO ] [main] [+] Narrowed down to 1 files (total size 0 MB).
+2022-09-22 23:08:29,609 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\bmp_out...
+2022-09-22 23:08:29,611 [INFO ] [main] [+] Time elapsed: 1 seconds
+2022-09-22 23:09:40,815 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:09:40,815 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\bmp
+2022-09-22 23:09:40,815 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 23:09:41,865 [INFO ] [main] [+] OK, 3113 tuples recorded.
+2022-09-22 23:09:41,868 [INFO ] [main] [+] Found 12 test cases across: D:\A_Download\winafl\pic\bmp.
+2022-09-22 23:09:41,869 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 23:09:43,295 [INFO ] [main] [+] Found 3145 unique tuples across 12 files
+2022-09-22 23:09:43,295 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 23:09:43,315 [INFO ] [main] [+] Original set was composed of 12 files
+2022-09-22 23:09:43,315 [INFO ] [main] [+] Effective set was composed of 12 files (total size 0 MB).
+2022-09-22 23:09:43,315 [INFO ] [main] [+] Narrowed down to 2 files (total size 0 MB).
+2022-09-22 23:09:43,315 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\bmp_out...
+2022-09-22 23:09:43,319 [INFO ] [main] [+] Time elapsed: 1 seconds
+2022-09-22 23:10:33,095 [INFO ] [main] [+] CWD changed to D:\A_Download\winafl\winafl\build32\bin\Release.
+2022-09-22 23:10:33,095 [DEBUG] [main] Inspecting the following directories: D:\A_Download\winafl\pic\jpg
+2022-09-22 23:10:33,130 [INFO ] [main] [*] Testing the target binary...
+2022-09-22 23:10:34,246 [INFO ] [main] [+] OK, 4009 tuples recorded.
+2022-09-22 23:10:34,246 [INFO ] [main] [+] Found 3000 test cases across: D:\A_Download\winafl\pic\jpg.
+2022-09-22 23:10:34,249 [INFO ] [main] [*] Instantiating 12 worker processes.
+2022-09-22 23:19:06,884 [INFO ] [main] [+] Found 4022 unique tuples across 3000 files
+2022-09-22 23:19:06,885 [INFO ] [main] [*] Finding best candidates for each tuple...
+2022-09-22 23:19:06,989 [INFO ] [main] [+] Original set was composed of 3000 files
+2022-09-22 23:19:06,990 [INFO ] [main] [+] Effective set was composed of 3000 files (total size 2 MB).
+2022-09-22 23:19:06,993 [INFO ] [main] [+] Narrowed down to 6 files (total size 0 MB).
+2022-09-22 23:19:07,000 [INFO ] [main] [*] Saving the minset in D:\A_Download\winafl\pic\jpg2_out...
+2022-09-22 23:19:07,016 [INFO ] [main] [+] Time elapsed: 512 seconds

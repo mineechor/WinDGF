@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(241,5): warning MSB8065: 项“D:\final\2022\winafl\winafl\CMakeLists.txt”的自定义生成成功，但尚未创建指定的输出“d:\final\2022\winafl\winafl\build64\cmakefiles\generate.stamp”。这可能会导致增量生成无法正常工作。
+  test_simple_winsock_client.cpp
+  test_servermode.vcxproj -> D:\final\2022\winafl\winafl\build64\bin\Release\test_servermode.exe

@@ -1,0 +1,3 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafldirctedgo3/CMakeLists.txt
+  afl-showmap.c
+  afl-showmap.vcxproj -> D:\final\2022\winafl\winafldirctedgo3\build32\bin\Release\afl-showmap.exe

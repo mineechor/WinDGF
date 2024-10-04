@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt
+  custom_net_fuzzer.c
+    正在创建库 D:/final/2022/winafl/winafl/build64/Release/custom_net_fuzzer.lib 和对象 D:/final/2022/winafl/winafl/build64/Release/custom_net_fuzzer.exp
+  custom_net_fuzzer.vcxproj -> D:\final\2022\winafl\winafl\build64\bin\Release\custom_net_fuzzer.dll

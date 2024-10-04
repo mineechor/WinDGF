@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6EF09F67-FC6E-3EC7-90BB-6890FF1C374A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>afl-tmin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\final\2022\winafl\winafl\build64\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">afl-tmin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">afl-tmin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\final\2022\winafl\winafl\build64\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">afl-tmin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">afl-tmin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\final\2022\winafl\winafl\build64\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">afl-tmin.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">afl-tmin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\final\2022\winafl\winafl\build64\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">afl-tmin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">afl-tmin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/final/2022/winafl/winafl/build64/Debug/afl-tmin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/final/2022/winafl/winafl/build64/bin/Debug/afl-tmin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/final/2022/winafl/winafl/build64/Release/afl-tmin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/final/2022/winafl/winafl/build64/bin/Release/afl-tmin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/final/2022/winafl/winafl/build64/MinSizeRel/afl-tmin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/final/2022/winafl/winafl/build64/bin/MinSizeRel/afl-tmin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dynamorio\build64\cmake\..\include;D:\dynamorio\build64\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/final/2022/winafl/winafl/build64/RelWithDebInfo/afl-tmin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/final/2022/winafl/winafl/build64/bin/RelWithDebInfo/afl-tmin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\final\2022\winafl\winafl\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\tools\cmake\bin\cmake.exe -SD:/final/2022/winafl/winafl -BD:/final/2022/winafl/winafl/build64 --check-stamp-file D:/final/2022/winafl/winafl/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\dynamorio\build64\cmake\DynamoRIOConfig.cmake;D:\dynamorio\build64\cmake\DynamoRIOConfigVersion.cmake;D:\dynamorio\build64\cmake\DynamoRIOMap64.cmake;D:\dynamorio\build64\cmake\DynamoRIOTarget64.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\tools\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\final\2022\winafl\winafl\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\tools\cmake\bin\cmake.exe -SD:/final/2022/winafl/winafl -BD:/final/2022/winafl/winafl/build64 --check-stamp-file D:/final/2022/winafl/winafl/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\dynamorio\build64\cmake\DynamoRIOConfig.cmake;D:\dynamorio\build64\cmake\DynamoRIOConfigVersion.cmake;D:\dynamorio\build64\cmake\DynamoRIOMap64.cmake;D:\dynamorio\build64\cmake\DynamoRIOTarget64.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\tools\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\final\2022\winafl\winafl\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\tools\cmake\bin\cmake.exe -SD:/final/2022/winafl/winafl -BD:/final/2022/winafl/winafl/build64 --check-stamp-file D:/final/2022/winafl/winafl/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\dynamorio\build64\cmake\DynamoRIOConfig.cmake;D:\dynamorio\build64\cmake\DynamoRIOConfigVersion.cmake;D:\dynamorio\build64\cmake\DynamoRIOMap64.cmake;D:\dynamorio\build64\cmake\DynamoRIOTarget64.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\tools\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\final\2022\winafl\winafl\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/final/2022/winafl/winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\tools\cmake\bin\cmake.exe -SD:/final/2022/winafl/winafl -BD:/final/2022/winafl/winafl/build64 --check-stamp-file D:/final/2022/winafl/winafl/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\dynamorio\build64\cmake\DynamoRIOConfig.cmake;D:\dynamorio\build64\cmake\DynamoRIOConfigVersion.cmake;D:\dynamorio\build64\cmake\DynamoRIOMap64.cmake;D:\dynamorio\build64\cmake\DynamoRIOTarget64.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeCXXCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeRCCompiler.cmake;D:\final\2022\winafl\winafl\build64\CMakeFiles\3.18.0-rc2\CMakeSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\tools\cmake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\tools\cmake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\tools\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\final\2022\winafl\winafl\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\final\2022\winafl\winafl\afl-tmin.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\final\2022\winafl\winafl\build64\ZERO_CHECK.vcxproj">
+      <Project>{54300681-BB6F-332F-A5A2-34AA6F7AFE96}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

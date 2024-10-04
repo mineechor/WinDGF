@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/final/2022/winafl/winafldirctedgo3key/CMakeLists.txt
+  test_static.cpp
+  afl-staticinstr.c
+  test_static.vcxproj -> D:\final\2022\winafl\winafldirctedgo3key\build32\bin\Release\test_static.exe
